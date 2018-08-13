@@ -1,0 +1,6 @@
+framework module Pods_EasyHRIOS {
+  umbrella header "Pods-EasyHRIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
