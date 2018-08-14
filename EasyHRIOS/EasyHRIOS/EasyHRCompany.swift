@@ -10,10 +10,15 @@ import Foundation
 
 class EasyHRCompany {
     let name: String!
-    let managers: [String]!
+    let uid: String!
+    var managers = [String]()
+    var workers = [String]()
+    var shifts = [EasyHRShift]()
     
-    init(name: String!, managers: [String]!) {
+    init(uid: String!, name: String!, managers: [String]!, workers: [String]!) {
+        self.uid = uid
         self.name = name
         self.managers = managers
+        self.workers = workers
     }
 }

@@ -10,13 +10,29 @@ import Foundation
 import FirebaseAuth
 
 class EasyHRUser {
-    let comapnies: [EasyHRCompany]!
+    private static var loaded = false
+    private static var instance: EasyHRUser {
+        let user = EasyHRUser(user: Auth.auth().currentUser)
+        
+        return user
+    }
+    
+    var companies:[EasyHRCompany] = []
     let name: String
     let email: String
+    let id: String
     
-    init(user: User!, comapnies: [EasyHRCompany]!) {
+    private init(user: User!) {
         self.name = user.displayName!
         self.email = user.email!
-        self.comapnies = comapnies!
+        self.id = user.uid
+    }
+    
+    func addCompany(company: EasyHRCompany) {
+        self.companies.append(company)
+    }
+    
+    static func current() -> EasyHRUser {
+       return instance
     }
 }

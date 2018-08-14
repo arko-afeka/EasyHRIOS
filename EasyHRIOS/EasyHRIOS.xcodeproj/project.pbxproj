@@ -11,11 +11,14 @@
 		691381E5212224E500E0C621 /* EasyHRUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691381E4212224E500E0C621 /* EasyHRUser.swift */; };
 		691381E7212227E300E0C621 /* EasyHRCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691381E6212227E300E0C621 /* EasyHRCompany.swift */; };
 		691381E921222A7100E0C621 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691381E821222A7100E0C621 /* OptionCell.swift */; };
+		69253F89212319CC00DB989D /* EasyHRShift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69253F88212319CC00DB989D /* EasyHRShift.swift */; };
+		69253F8D212320EA00DB989D /* CreateCompanyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69253F8C212320EA00DB989D /* CreateCompanyScreen.swift */; };
+		69253F8F2123256500DB989D /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69253F8E2123256500DB989D /* Keys.swift */; };
 		694D196C2120C490007D501A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694D196B2120C490007D501A /* AppDelegate.swift */; };
 		694D19772120C491007D501A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694D19762120C491007D501A /* Assets.xcassets */; };
 		694D197A2120C491007D501A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694D19782120C491007D501A /* LaunchScreen.storyboard */; };
 		69A53B282120D48500A8F06D /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A53B272120D48500A8F06D /* MainScreen.storyboard */; };
-		69A53B2A2120D4CB00A8F06D /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A53B292120D4CB00A8F06D /* LoginScreen.swift */; };
+		69A53B2A2120D4CB00A8F06D /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A53B292120D4CB00A8F06D /* MainScreen.swift */; };
 		69E4DB6B2120D1670006D2FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69E4DB6A2120D1670006D2FC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +26,16 @@
 		691381E4212224E500E0C621 /* EasyHRUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyHRUser.swift; sourceTree = "<group>"; };
 		691381E6212227E300E0C621 /* EasyHRCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyHRCompany.swift; sourceTree = "<group>"; };
 		691381E821222A7100E0C621 /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		69253F88212319CC00DB989D /* EasyHRShift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyHRShift.swift; sourceTree = "<group>"; };
+		69253F8C212320EA00DB989D /* CreateCompanyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCompanyScreen.swift; sourceTree = "<group>"; };
+		69253F8E2123256500DB989D /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		694D19682120C490007D501A /* EasyHRIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyHRIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694D196B2120C490007D501A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694D19762120C491007D501A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694D19792120C491007D501A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694D197B2120C491007D501A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69A53B272120D48500A8F06D /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
-		69A53B292120D4CB00A8F06D /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		69A53B292120D4CB00A8F06D /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		69E4DB6A2120D1670006D2FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAA37D650D2F82AE0C77B353 /* Pods-EasyHRIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyHRIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyHRIOS/Pods-EasyHRIOS.release.xcconfig"; sourceTree = "<group>"; };
 		FA2B8AB17813A51AB635F142 /* Pods-EasyHRIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyHRIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyHRIOS/Pods-EasyHRIOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,16 +92,19 @@
 		694D196A2120C490007D501A /* EasyHRIOS */ = {
 			isa = PBXGroup;
 			children = (
+				69253F8C212320EA00DB989D /* CreateCompanyScreen.swift */,
 				69E4DB6A2120D1670006D2FC /* GoogleService-Info.plist */,
 				694D196B2120C490007D501A /* AppDelegate.swift */,
 				694D19762120C491007D501A /* Assets.xcassets */,
 				694D19782120C491007D501A /* LaunchScreen.storyboard */,
 				694D197B2120C491007D501A /* Info.plist */,
 				69A53B272120D48500A8F06D /* MainScreen.storyboard */,
-				69A53B292120D4CB00A8F06D /* LoginScreen.swift */,
+				69A53B292120D4CB00A8F06D /* MainScreen.swift */,
 				691381E6212227E300E0C621 /* EasyHRCompany.swift */,
+				69253F88212319CC00DB989D /* EasyHRShift.swift */,
 				691381E4212224E500E0C621 /* EasyHRUser.swift */,
 				691381E821222A7100E0C621 /* OptionCell.swift */,
+				69253F8E2123256500DB989D /* Keys.swift */,
 			);
 			path = EasyHRIOS;
 			sourceTree = "<group>";
@@ -278,11 +287,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69253F8D212320EA00DB989D /* CreateCompanyScreen.swift in Sources */,
+				69253F8F2123256500DB989D /* Keys.swift in Sources */,
 				691381E921222A7100E0C621 /* OptionCell.swift in Sources */,
 				694D196C2120C490007D501A /* AppDelegate.swift in Sources */,
+				69253F89212319CC00DB989D /* EasyHRShift.swift in Sources */,
 				691381E7212227E300E0C621 /* EasyHRCompany.swift in Sources */,
 				691381E5212224E500E0C621 /* EasyHRUser.swift in Sources */,
-				69A53B2A2120D4CB00A8F06D /* LoginScreen.swift in Sources */,
+				69A53B2A2120D4CB00A8F06D /* MainScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

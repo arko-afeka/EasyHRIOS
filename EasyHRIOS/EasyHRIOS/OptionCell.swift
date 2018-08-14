@@ -17,6 +17,7 @@ enum MenuOption: String {
     case AssignShifts = "Assign Shifts"
     case ConfigureShifts = "Configure Shifts"
     case Signout = "Signout"
+    case SelectCompany = "Select Company"
 }
 
 class OptionCell: UITableViewCell {

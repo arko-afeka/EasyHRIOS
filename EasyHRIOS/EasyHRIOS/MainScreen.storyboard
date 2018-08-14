@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -54,13 +56,54 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKr-2t-9c8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="s4b-lc-EDl">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" id="s4b-lc-EDl">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="color" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
             </objects>
             <point key="canvasLocation" x="-399" y="-284"/>
+        </scene>
+        <!--Add Company-->
+        <scene sceneID="8Vf-Tr-6er">
+            <objects>
+                <viewController storyboardIdentifier="AddCompany" title="Add Company" id="f8B-hA-Nlm" customClass="CreateCompanyScreen" customModule="EasyHRIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="waX-a7-3Yd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXE-tD-rZw" userLabel="Company Name">
+                                <rect key="frame" x="16" y="74" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRg-kf-8E2">
+                                <rect key="frame" x="164" y="617" width="46" height="30"/>
+                                <state key="normal" title="Create"/>
+                                <connections>
+                                    <action selector="save:" destination="f8B-hA-Nlm" eventType="touchUpInside" id="J5F-ke-0kj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xXE-tD-rZw" firstAttribute="trailing" secondItem="waX-a7-3Yd" secondAttribute="trailingMargin" id="JBC-lX-2db"/>
+                            <constraint firstItem="xXE-tD-rZw" firstAttribute="top" secondItem="sew-hb-jj3" secondAttribute="top" constant="54" id="TV4-p9-ryl"/>
+                            <constraint firstItem="xXE-tD-rZw" firstAttribute="centerX" secondItem="LRg-kf-8E2" secondAttribute="centerX" id="aLy-cb-skV"/>
+                            <constraint firstItem="xXE-tD-rZw" firstAttribute="leading" secondItem="waX-a7-3Yd" secondAttribute="leadingMargin" id="gzi-Sa-9ju"/>
+                            <constraint firstAttribute="bottom" secondItem="LRg-kf-8E2" secondAttribute="bottom" constant="20" symbolic="YES" id="uda-jM-OkU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sew-hb-jj3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Company" id="W2F-ot-wXM"/>
+                    <connections>
+                        <outlet property="comanyNameText" destination="xXE-tD-rZw" id="lTR-6S-Kfs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFD-i7-tON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.19999999999999" y="-284.70764617691157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ma8-Qq-K91">
